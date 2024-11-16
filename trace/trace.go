@@ -6,7 +6,7 @@ import (
 	"runtime"
 )
 
-func trace() {
+func Trace() {
 	_, file, line, ok := runtime.Caller(1)
 	if !ok {
 		panic("for some reason runtime.Caller failed")
