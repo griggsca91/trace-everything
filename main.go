@@ -63,7 +63,7 @@ func main() {
 				return
 			}
 			defer f.Close()
-			printer.Fprint(os.Stdout, fset, file)
+			printer.Fprint(f, fset, file)
 		}
 	}
 }
